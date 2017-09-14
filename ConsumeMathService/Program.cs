@@ -9,6 +9,10 @@ namespace ConsumeMathService
     {
         static void Main(string[] args)
         {
+            //This code creates an instance of the proxy object that was created
+            localhost.MyMathService myMathService = new localhost.MyMathService();
+            Console.Write("2 + 4 = {0}", myMathService.Add(2, 4));
+            Console.ReadLine();
         }
     }
 }
